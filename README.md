@@ -3,15 +3,13 @@
 La idea de esto es tener un repo de donde podamos copiar la estructura de los makefiles y toda esa bola para cada ejecutable nuevo.
 La estructura basica de cada proyecto se ve asi (suponiendo que el ejecutable/proyecto es prueba):
 
-`
-.
-├── include
-│   ├── sut.c
-│   └── sut.h
-├── makefile
-├── prueba.c
-└── tests.c
-`
+`.`  
+`├── include`  
+`├── sut.c`  
+`│   └── sut.h`  
+`├── makefile`  
+`├── prueba.c`  
+`└── tests.c`  
 
 Esta tiene varias partes, el makefile, el punto de entrada del programa (en este caso prueba.c), el archivo tests.c y la carpeta include.
 
@@ -38,6 +36,6 @@ Aca van todos los archivos con nuestras funciones a testear, las cuales tienen q
 
 ## Workflow
 
-`make install run` para correr el programa
-`make test` para testear
-`make clean` antes de un commit
+`make install run` para correr el programa  
+`make test` para testear  
+`make clean` antes de un commit  
