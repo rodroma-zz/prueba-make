@@ -5,7 +5,7 @@ La estructura basica de cada proyecto se ve asi (suponiendo que el ejecutable/pr
 
 `.`  
 `├── include`  
-`├── sut.c`  
+`│   └── sut.c`  
 `│   └── sut.h`  
 `├── makefile`  
 `├── prueba.c`  
