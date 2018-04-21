@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-Wall -g -lcspecs
+CFLAGS=-Wall -g -lcspecs -I../src/
 
 test:
-	$(CC) -I../src/ $(CFLAGS) -o tests
+	$(CC) $(CFLAGS) -o tests *.c ../src/*.c
 	./tests
 

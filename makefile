@@ -1,8 +1,7 @@
 install:
-	make -C ./src install
+	make -C ./main install
 test:
 	make -C ./tests test
-	make -C ./tests run
 run:
-	make -C ./src install
-	make -C ./src run
+	make -C ./main install
+	make -C ./main run
