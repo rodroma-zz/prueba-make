@@ -1,7 +1,8 @@
 CC=gcc
-CFLAGS=-Wall -g -lcspecs -I../src/
+INCLUDEDIR=include
+CFLAGS=-Wall -g -lcspecs -I../$(INCLUDEDIR)/
 
 test:
-	$(CC) $(CFLAGS) -o tests *.c ../src/*.c
+	$(CC) $(CFLAGS) -o tests *.c ../$(INCLUDEDIR)/*.c
 	./tests
 

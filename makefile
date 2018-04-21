@@ -1,9 +1,10 @@
 CC=gcc
 CFGLAGS=-Wall -g
+INCLUDEDIR=include
 PROGNAME=prueba
 
 install:
-	$(CC) $(PROGNAME).c src/*.c -o $(PROGNAME) $(CFLAGS) -Isrc
+	$(CC) $(PROGNAME).c $(INCLUDEDIR)/*.c -o $(PROGNAME) $(CFLAGS) -I$(INCLUDEDIR)
 run:
 	./$(PROGNAME)
 test:
