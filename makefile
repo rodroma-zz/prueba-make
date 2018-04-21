@@ -8,7 +8,9 @@ install:
 run:
 	./$(PROGNAME)
 clean:
-	rm $(PROGNAME)
-	rm tests/tests
+	rm -f $(PROGNAME)
+	rm -f tests
 test:
-	make -C ./tests test
+	$(CC) $(CFLAGS) -o tests tests.c $(INCLUDEDIR)/*.c -lcspecs -I$(INCLUDEDIR)/
+	./tests
+
