@@ -1,7 +1,10 @@
+CC=gcc
+CFGLAGS=-Wall -g
+PROGNAME=prueba
+
 install:
-	make -C ./main install
+	$(CC) $(PROGNAME).c src/*.c -o $(PROGNAME) $(CFLAGS) -Isrc
+run:
+	./$(PROGNAME)
 test:
 	make -C ./tests test
-run:
-	make -C ./main install
-	make -C ./main run
